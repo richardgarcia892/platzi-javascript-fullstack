@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div p {
+        background-color: lightblue;
+      }
+      div > div {
+        background-color: antiquewhite;
+      }
+      .es {
+        background-color: darkblue;
+        color: lightblue;
+      }
+      div + section {
+        background-color: aquamarine;
+      }
+      p + section {
+        background-color: aquamarine;
+      }
+      div ~ p {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <p>P in the main div</p>
+        <div>First inner DIV</div>
+        <div class="second">Second inner div</div>
+      </div>
+      <section>inner section adyacent to div, no muestra color porque hay un P antes</section>
+      <p>Hermano del div</p>
+      <section>inner section adyacent to div, no muestra color porque hay un P antes</section>
+    </section>
+  </body>
+</html>

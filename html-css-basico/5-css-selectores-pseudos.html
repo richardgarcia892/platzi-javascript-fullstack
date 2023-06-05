@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: salmon;
+        font-size: xx-large;
+      }
+      p::before {
+        content: '💫';
+      }
+      p::after {
+        content: '🕸️';
+      }
+      p::first-letter {
+        color: teal;
+      }
+      p:hover {
+        background-color: black;
+      }
+      div p:nth-child(odd) {
+        color: lightgrey;
+      }
+      div p:nth-child(even) {
+        color: darkgray;
+      }
+      ::placeholder {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>first paragraph</p>
+      <p>second paragraph</p>
+      <p>third paragraph</p>
+      <p>fourth paragraph</p>
+      <input type="text" placeholder="name" />
+    </div>
+  </body>
+</html>
